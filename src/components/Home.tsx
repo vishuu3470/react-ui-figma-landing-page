@@ -166,9 +166,9 @@ const Home = () => {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="object-cover w-full h-[260px]"
+                    className="object-cover w-full h-[294px] sm:h-[260px]"
                   />
-                  <div className="absolute inset-0 bg-[#f1ece1d1] p-6 flex flex-col ">
+                  <div className="absolute inset-0 bg-[#f1ece1d1] justify-between p-6 flex flex-col ">
                     <div>
                       <h3 className="font-semibold leading-9 text-black text-[32px] mb-2">
                         {feature.title}
