@@ -6,8 +6,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { features, stories } from "./common/data";
-import bannerImage from "./../assets/banner.webp"
+
+import bannerImage from "./../assets/banner.webp";
+import fishImage from "./../assets/fishImage.webp";
+import  memberImage1 from "./../assets/member_image1.webp"
+import  memberImage2 from "./../assets/member_image2.webp"
+import  memberImage3 from "./../assets/member_image3.webp"
+import  memberImage4 from "./../assets/member_image4.webp"
 
 const Home = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
@@ -21,6 +26,54 @@ const Home = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const features = [
+    {
+      title: "Explore Fly Fishing",
+      description:
+        "Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Tellus in metus vulputate eu sc",
+      image: fishImage,
+    },
+    {
+      title: "Fly Fishing Experiences",
+      description:
+        "Elit pellentesque habitant morbi tristique senectus et netus et. In hendrerit gravida rutrum quisque",
+        image: fishImage,
+    },
+    {
+      title: "Gear Up and Catch More",
+      description:
+        "In metus vulputate eu scelerisque felis imperdiet. Nunc scelerisque viverra mauris in aliquam sem. S",
+        image: fishImage,
+    },
+  ];
+
+  const stories = [
+    {
+      title: "John's Story",
+      image: memberImage1,
+      description:
+        "Non arcu risus quis varius quam quisque. Ornare suspendisse sed nisi lacus. Eu feugiat pretium nibh ",
+    },
+    {
+      title: "The Journey",
+      image: memberImage2,
+      description:
+        "Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Tellus in metus vulputate eu sc",
+    },
+    {
+      title: "Catch Day",
+      image: memberImage3,
+      description:
+        "Elit pellentesque habitant morbi tristique senectus et netus et. In hendrerit gravida rutrum quisque",
+    },
+    {
+      title: "Trout Tales",
+      image: memberImage4,
+      description:
+        "Sit amet mattis vulputate enim nulla aliquet. At augue eget arcu dictum varius. Volutpat commodo sed",
+    },
+  ];
 
   return (
     <div>

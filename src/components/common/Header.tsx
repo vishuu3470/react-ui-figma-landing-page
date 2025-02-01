@@ -9,6 +9,8 @@ import { mainNav } from "./data";
 export default function Header() {
   const location = useLocation();
 
+  console.log("location.pathname",location.pathname)
+
   return (
     <header className="flex h-20 container m-auto w-full justify-between shrink-0 items-center px-[24px] xl:px-0 ">
       <Link to="#" className="mr-6  lg:flex">
@@ -28,6 +30,7 @@ export default function Header() {
       <nav className="ml-auto hidden lg:flex gap-6">
         <ul className=" md:flex items-center gap-10 ">
           {mainNav.map((item) => {
+            console.log("item.url",item.url)
             const isActive = location.pathname === item.url;
             return (
               <li key={item.name}>

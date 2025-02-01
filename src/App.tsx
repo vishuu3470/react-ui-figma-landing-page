@@ -13,10 +13,10 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="react-ui-figma-landing-page/" element={<Home />} />
+          <Route path="react-ui-figma-landing-page/about" element={<About />} />
+          <Route path="react-ui-figma-landing-page/services" element={<Services />} />
+          <Route path="react-ui-figma-landing-page/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>
