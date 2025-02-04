@@ -6,10 +6,10 @@ import faceBook from "./../../assets/faceBook_logo.svg";
 
 export default function Footer() {
   const footerNav = [
-    { name: "FAQ", url: "/faq" },
-    { name: "Privacy", url: "/privacy" },
-    { name: "Support", url: "/support" },
-    { name: "Contact", url: "/contact" },
+    { name: "FAQ", url: "#" },
+    { name: "Privacy", url: "#" },
+    { name: "Support", url: "#" },
+    { name: "Contact", url: "#" },
   ];
   return (
     <footer className="bg-brown-darker text-neutral-0  px-[24px] xl:px-0">
@@ -21,7 +21,7 @@ export default function Footer() {
               height={40}
               className=" md:hidden block w-[71px]"
             />
-          <ul className="flex flex-wrap items-center justify-center gap-[20px] ">
+          <ul className="flex flex-wrap items-center justify-center gap-[24px] ">
             <img
               src={logo}
               alt="logo"
@@ -39,19 +39,19 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="flex gap-[16px]">
-            <Link to="#" className="text-neutral-80 hover:text-neutral-0">
+          <div className="flex gap-2">
+            <Link to="#" className="text-neutral-80 h-10 w-10 flex justify-center items-center hover:text-neutral-0">
               <img src={faceBook} alt="linkedin logo" className="w-6 h-6" />
             </Link>
-            <Link to="#" className="text-neutral-80 hover:text-neutral-0">
+            <Link to="#" className="text-neutral-80 h-10 w-10  flex items-center justify-center hover:text-neutral-0">
               <img src={instaLogo} alt="insta logo" className="w-6 h-6" />
             </Link>
-            <Link to="#" className="text-neutral-80 hover:text-neutral-0">
+            <Link to="#" className="text-neutral-80 h-10 w-10 flex justify-center items-center hover:text-neutral-0">
               <img src={linkedinLogo} alt="linkedin logo" className="w-6 h-6" />
             </Link>
           </div>
         </div>
-        <div className="text-center  text-neutral-60  text-caption text-xs leading-3">
+        <div className="text-center  text-neutral-30  text-caption text-xs leading-3">
           © 2024 Central Texas Fly Fishing All Rights Reserved.
         </div>
       </div>

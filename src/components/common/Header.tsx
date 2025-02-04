@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex h-20 container m-auto w-full justify-between shrink-0 items-center px-[24px] xl:px-0">
+    <header className="flex py-3 lg:py-2 container m-auto w-full justify-between shrink-0 items-center px-[24px] xl:px-0">
       <Link to="#" className="mr-6 lg:flex">
         <img src={logo} alt="logo" className="hidden md:block w-[333px]" height={40} />
         <img src={imageLogo} alt="logo" className="block md:hidden w-[57px]" height={32} />
@@ -31,7 +31,7 @@ export default function Header() {
                   to={item.url}
                   className={`transition-colors py-2 ${
                     isActive
-                      ? "text-brown-default font-normal border-b-2 border-black"
+                      ? "text-brown-default font-normal border-b-2 border-neutral-90"
                       : "hover:text-brown-default"
                   }`}
                 >
@@ -53,7 +53,7 @@ export default function Header() {
           <div className="grid gap-2 py-6">
             {[
               { name: "Home", url: "/react-ui-figma-landing-page/" },
-              { name: "About", url: "/react-ui-figma-landing-page/about" },
+              { name: "About us", url: "/react-ui-figma-landing-page/about" },
               { name: "Services", url: "/react-ui-figma-landing-page/services" },
               { name: "Contact", url: "/react-ui-figma-landing-page/contact" },
             ].map((item) => (
